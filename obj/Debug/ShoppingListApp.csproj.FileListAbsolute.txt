@@ -1,0 +1,9 @@
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\bin\Debug\ShoppingListApp.exe.config
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\bin\Debug\ShoppingListApp.exe
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\bin\Debug\ShoppingListApp.pdb
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.csprojResolveAssemblyReference.cache
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.ShoppingListForm.resources
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.Properties.Resources.resources
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.csproj.GenerateResource.Cache
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.exe
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.pdb
