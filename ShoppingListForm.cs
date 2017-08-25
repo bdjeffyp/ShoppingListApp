@@ -16,9 +16,15 @@ namespace ShoppingListApp
         {
             InitializeComponent();
 
-            // Populate the flow panel with sample controls
-            // to illustrate what it will look like
             
+            
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            // Displays the About box in a modal dialog
+            AboutBox aboutBox = new AboutBox();
+            aboutBox.ShowDialog(this);
         }
     }
 }

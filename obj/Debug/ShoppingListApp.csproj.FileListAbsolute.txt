@@ -7,3 +7,5 @@ C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\Shoppin
 C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.csproj.GenerateResource.Cache
 C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.exe
 C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.pdb
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.csproj.CoreCompileInputs.cache
+C:\Users\wwstudent\Documents\Visual Studio 2017\Projects\ShoppingListApp\ShoppingListApp\obj\Debug\ShoppingListApp.AboutBox.resources

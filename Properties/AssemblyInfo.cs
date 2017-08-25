@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ShoppingListApp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Shopping Trips")]
+[assembly: AssemblyDescription("Create simple shopping lists from common items and custom items, categorized and sorted by trip. teamAwesome is:                                                               -Jessica Helmer                                                                  -Amanda Kaufman                                                             -Chris Massey                                                                    -Jeff Peterson")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ShoppingListApp")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCompany("teamAwesome")]
+[assembly: AssemblyProduct("Shopping Trips")]
+[assembly: AssemblyCopyright("Copyright © 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
