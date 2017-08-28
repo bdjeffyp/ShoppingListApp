@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingListForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabMasterList = new System.Windows.Forms.TabPage();
-            this.panelCategories = new System.Windows.Forms.Panel();
+            this.panelMasterList = new System.Windows.Forms.Panel();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -49,7 +49,7 @@
             this.btnAddToMaster = new System.Windows.Forms.Button();
             this.btnDeleteTrip = new System.Windows.Forms.Button();
             this.btnCreateNewTrip = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelShopTrip = new System.Windows.Forms.Panel();
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.listBox5 = new System.Windows.Forms.ListBox();
@@ -63,9 +63,9 @@
             this.btnAbout = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabMasterList.SuspendLayout();
-            this.panelCategories.SuspendLayout();
+            this.panelMasterList.SuspendLayout();
             this.tabShoppingTrips.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelShopTrip.SuspendLayout();
             this.tabHelp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +84,7 @@
             // 
             // tabMasterList
             // 
-            this.tabMasterList.Controls.Add(this.panelCategories);
+            this.tabMasterList.Controls.Add(this.panelMasterList);
             this.tabMasterList.Controls.Add(this.btnAddToTrip);
             this.tabMasterList.Controls.Add(this.btnDeleteItems);
             this.tabMasterList.Controls.Add(this.btnAddItem);
@@ -99,21 +99,21 @@
     " add to future shopping trips";
             this.tabMasterList.UseVisualStyleBackColor = true;
             // 
-            // panelCategories
+            // panelMasterList
             // 
-            this.panelCategories.AutoScroll = true;
-            this.panelCategories.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelCategories.Controls.Add(this.listBox3);
-            this.panelCategories.Controls.Add(this.label4);
-            this.panelCategories.Controls.Add(this.listBox2);
-            this.panelCategories.Controls.Add(this.label3);
-            this.panelCategories.Controls.Add(this.listBox1);
-            this.panelCategories.Controls.Add(this.label2);
-            this.panelCategories.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelCategories.Location = new System.Drawing.Point(7, 34);
-            this.panelCategories.Name = "panelCategories";
-            this.panelCategories.Size = new System.Drawing.Size(491, 447);
-            this.panelCategories.TabIndex = 3;
+            this.panelMasterList.AutoScroll = true;
+            this.panelMasterList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMasterList.Controls.Add(this.listBox3);
+            this.panelMasterList.Controls.Add(this.label4);
+            this.panelMasterList.Controls.Add(this.listBox2);
+            this.panelMasterList.Controls.Add(this.label3);
+            this.panelMasterList.Controls.Add(this.listBox1);
+            this.panelMasterList.Controls.Add(this.label2);
+            this.panelMasterList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelMasterList.Location = new System.Drawing.Point(7, 34);
+            this.panelMasterList.Name = "panelMasterList";
+            this.panelMasterList.Size = new System.Drawing.Size(491, 447);
+            this.panelMasterList.TabIndex = 3;
             // 
             // listBox3
             // 
@@ -176,7 +176,7 @@
             this.btnAddToTrip.Name = "btnAddToTrip";
             this.btnAddToTrip.Size = new System.Drawing.Size(167, 29);
             this.btnAddToTrip.TabIndex = 0;
-            this.btnAddToTrip.Text = "Add to Shopping Trip";
+            this.btnAddToTrip.Text = "Add Items to Trip...";
             this.btnAddToTrip.UseVisualStyleBackColor = true;
             // 
             // btnDeleteItems
@@ -186,8 +186,9 @@
             this.btnDeleteItems.Name = "btnDeleteItems";
             this.btnDeleteItems.Size = new System.Drawing.Size(143, 29);
             this.btnDeleteItems.TabIndex = 2;
-            this.btnDeleteItems.Text = "Delete Items";
+            this.btnDeleteItems.Text = "Delete Items...";
             this.btnDeleteItems.UseVisualStyleBackColor = true;
+            this.btnDeleteItems.Click += new System.EventHandler(this.btnDeleteItems_Click);
             // 
             // btnAddItem
             // 
@@ -196,8 +197,9 @@
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.Size = new System.Drawing.Size(143, 29);
             this.btnAddItem.TabIndex = 1;
-            this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.Text = "Add Item...";
             this.btnAddItem.UseVisualStyleBackColor = true;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // labelStatus
             // 
@@ -217,7 +219,7 @@
             this.tabShoppingTrips.Controls.Add(this.btnAddToMaster);
             this.tabShoppingTrips.Controls.Add(this.btnDeleteTrip);
             this.tabShoppingTrips.Controls.Add(this.btnCreateNewTrip);
-            this.tabShoppingTrips.Controls.Add(this.panel1);
+            this.tabShoppingTrips.Controls.Add(this.panelShopTrip);
             this.tabShoppingTrips.Controls.Add(this.comboBox1);
             this.tabShoppingTrips.Controls.Add(this.label5);
             this.tabShoppingTrips.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -283,20 +285,20 @@
             this.btnCreateNewTrip.Text = "Create New Trip";
             this.btnCreateNewTrip.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelShopTrip
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.listBox6);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.listBox5);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.listBox4);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(6, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(492, 360);
-            this.panel1.TabIndex = 2;
+            this.panelShopTrip.AutoScroll = true;
+            this.panelShopTrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelShopTrip.Controls.Add(this.listBox6);
+            this.panelShopTrip.Controls.Add(this.label8);
+            this.panelShopTrip.Controls.Add(this.listBox5);
+            this.panelShopTrip.Controls.Add(this.label7);
+            this.panelShopTrip.Controls.Add(this.listBox4);
+            this.panelShopTrip.Controls.Add(this.label6);
+            this.panelShopTrip.Location = new System.Drawing.Point(6, 42);
+            this.panelShopTrip.Name = "panelShopTrip";
+            this.panelShopTrip.Size = new System.Drawing.Size(492, 360);
+            this.panelShopTrip.TabIndex = 2;
             // 
             // listBox6
             // 
@@ -415,12 +417,12 @@
             this.Text = "Shopping Trips";
             this.tabControl1.ResumeLayout(false);
             this.tabMasterList.ResumeLayout(false);
-            this.panelCategories.ResumeLayout(false);
-            this.panelCategories.PerformLayout();
+            this.panelMasterList.ResumeLayout(false);
+            this.panelMasterList.PerformLayout();
             this.tabShoppingTrips.ResumeLayout(false);
             this.tabShoppingTrips.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelShopTrip.ResumeLayout(false);
+            this.panelShopTrip.PerformLayout();
             this.tabHelp.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -437,7 +439,7 @@
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.TabPage tabRecipies;
         private System.Windows.Forms.TabPage tabHelp;
-        private System.Windows.Forms.Panel panelCategories;
+        private System.Windows.Forms.Panel panelMasterList;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox2;
@@ -450,7 +452,7 @@
         private System.Windows.Forms.Button btnAddToMaster;
         private System.Windows.Forms.Button btnDeleteTrip;
         private System.Windows.Forms.Button btnCreateNewTrip;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelShopTrip;
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox listBox5;
