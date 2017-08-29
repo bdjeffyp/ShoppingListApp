@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Categories>
+  <Category>
+    <categoryId>0</categoryId>
+    <name>Beverages</name>
+    <list>
+      <id>0</id>
+      <name>Coke</name>
+      <id>1</id>
+      <name>Diet Coke</name>
+      <id>2</id>
+      <name>Captain Morgan</name>
+      <id>3</id>
+      <name>OJ</name>
+      <id>4</id>
+      <name>Vodka</name>
+    </list>
+  </Category>
+  <Category>
+    <categoryId>1</categoryId>
+    <name>Fruit</name>
+    <list>
+      <id>0</id>
+      <name>Apple</name>
+      <id>1</id>
+      <name>Grapes</name>
+      <id>2</id>
+      <name>Orange</name>
+      <id>3</id>
+      <name>Pomegranate</name>
+      <id>4</id>
+      <name>Watermelon</name>
+      <id>5</id>
+      <name>Pear</name>
+      <id>6</id>
+      <name>Lemon</name>
+      <id>7</id>
+      <name>Lime</name>
+      <id>8</id>
+      <name>Strawberry</name>
+    </list>
+  </Category>
+  <Category>
+    <categoryId>2</categoryId>
+    <name>Vegetables</name>
+    <list>
+      <id>0</id>
+      <name>Carrot</name>
+      <id>1</id>
+      <name>Celery</name>
+      <id>2</id>
+      <name>Lettuce</name>
+    </list>
+  </Category>
+  <Category>
+    <categoryId>3</categoryId>
+    <name>Frozen Food</name>
+    <list>
+      <id>0</id>
+      <name>Hash Browns</name>
+      <id>1</id>
+      <name>Hot Pockets</name>
+      <id>2</id>
+      <name>Frozen Pizza</name>
+    </list>
+  </Category>
+</Categories>

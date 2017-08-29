@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cinnamon-icon.ico" />
+    <Content Include="masterlist.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
